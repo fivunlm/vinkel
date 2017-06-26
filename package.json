@@ -1,8 +1,11 @@
 {
   "name": "vinkel",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Argular components lib",
-  "main": "index.js",
+  "main": "vinkel.umd.js",
+  "jsnext:main": "vinkel.umd.js",
+  "module": "vinkel.umd.js",
+  "types": "vinkel.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "copy": "node tools/copy-package.js && node tools/cleanup-package.js",
