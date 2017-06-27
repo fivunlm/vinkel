@@ -1,6 +1,6 @@
 {
   "name": "vinkel",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Angular components library",
   "main": "./bundles/vinkel.umd.js",
   "module": "./vinkel.es5.js",
