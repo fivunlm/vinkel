@@ -1,14 +1,13 @@
-# Node generated files
-node_modules
+dist/
+node_modules/
+out-tsc/
+debug.log
 npm-debug.log
-# OS generated files
-Thumbs.db
-.DS_Store
-# Ignored files
-*.js
-*.map
-*.d.ts
-
-dist/*
+src/**/*.js
+!src/demo/systemjs.config.js
+!src/demo/systemjs.config.lib.js
+!**/*systemjs-angular-loader.js
+*.js.map
+e2e/**/*.js
+e2e/**/*.js.map
 .idea/*
-.rpt2_cache/*
