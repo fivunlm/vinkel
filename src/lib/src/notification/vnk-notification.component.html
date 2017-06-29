@@ -1,0 +1,11 @@
+<div *ngIf="_show" class="alert notification"
+     [class.alert-info]="_type == _vnkNotificationTypes.Info"
+     [class.alert-success]="_type == _vnkNotificationTypes.Success"
+     [class.alert-warning]="_type == _vnkNotificationTypes.Warning"
+     [class.alert-danger]="_type == _vnkNotificationTypes.Danger"
+     role="alert">
+  <button type="button" class="close ml-2" aria-label="Close" (click)="onClose()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <strong *ngIf="_title">{{_title}}</strong> {{_text}}
+</div>
