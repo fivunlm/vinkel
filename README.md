@@ -15,3 +15,10 @@ Vinkel uses boostrap v4 styles so you should install it
 
 `` npm install bootstrap@4.0.0-alpha.6  ``
 
+## Components
+
+| Component | Status  |
+|---|---|
+| Notification  | In progress |
+|   |   |
+|   |   |
