@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {NotificationDemoComponent} from "./notification/notification-demo.component";
-import {HomeComponent} from "./home/home.component";
+import {NotificationDemoComponent} from './notification/notification-demo.component';
+import {HomeComponent} from './home/home.component';
 
 
 const routes: Routes = [

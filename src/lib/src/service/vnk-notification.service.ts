@@ -1,6 +1,6 @@
-import {Injectable} from "@angular/core";
-import {Subject} from "rxjs/Subject";
-import {Observable} from "rxjs/Observable";
+import {Injectable} from '@angular/core';
+import {Subject} from 'rxjs/Subject';
+import {Observable} from 'rxjs/Observable';
 
 export enum VnkNotificationType {
   Success,
@@ -12,8 +12,8 @@ export enum VnkNotificationType {
 export interface VnkNotificationPayload {
   title: string;
   text: string;
-  duration: number,
-  type: VnkNotificationType
+  duration: number;
+  type: VnkNotificationType;
 }
 
 @Injectable()
@@ -43,8 +43,8 @@ export class VnkNotificationService {
     this._notifications.next(payload);
   }
 
-  public open(textOrPayload: any, title?: string){
-    if(textOrPayload && typeof textOrPayload == 'string'){
+  public open(textOrPayload: any, title?: string) {
+    if (textOrPayload && typeof textOrPayload === 'string') {
       this._simpleOpen(textOrPayload, title);
       return;
     }
@@ -52,8 +52,8 @@ export class VnkNotificationService {
   }
 
   private _checkObservers() {
-    if (this._notifications.observers.length == 0) {
-      throw Error('There is no notification observer. Have you included a VnkNotificationComponent on your templates?')
+    if (this._notifications.observers.length === 0) {
+      throw Error('There is no notification observer. Have you included a VnkNotificationComponent on your templates?');
     }
   }
 }

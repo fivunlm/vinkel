@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {VnkNotificationPayload, VnkNotificationService, VnkNotificationType} from "../service/vnk-notification.service";
+import {VnkNotificationPayload, VnkNotificationService, VnkNotificationType} from '../service/vnk-notification.service';
 
 @Component({
   selector: 'vnk-notification',
@@ -8,8 +8,8 @@ import {VnkNotificationPayload, VnkNotificationService, VnkNotificationType} fro
 })
 export class VnkNotificationComponent implements OnInit {
   _title: string = null;
-  _text: string = '';
-  _show: boolean = false;
+  _text = '';
+  _show = false;
   _type: VnkNotificationType = VnkNotificationType.Info;
   _vnkNotificationTypes = VnkNotificationType;
   _lastTimeout: any;
@@ -24,13 +24,13 @@ export class VnkNotificationComponent implements OnInit {
       this._title = p.title;
       this._type = p.type;
 
-      if(p.duration && p.duration > 0){
+      if (p.duration && p.duration > 0) {
         this._lastTimeout = setTimeout(() => this._show = false, p.duration);
       }
     });
   }
 
-  onClose(){
+  onClose() {
     this._show = false;
     clearTimeout(this._lastTimeout);
   }
