@@ -1,0 +1,9 @@
+<div class="progress" [style.height]="height+'px'">
+  <div class="progress-bar"
+       [ngClass]="progressClass"
+       [class.determinate]="_determinated"
+       [class.indeterminate]="!_determinated"
+       [style.width]="value+'%'"
+       [style.height]="height+'px'"
+  ></div>
+</div>

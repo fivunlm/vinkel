@@ -5,6 +5,7 @@ import {LibService} from './service/lib.service';
 import {VnkNotificationComponent} from './notification/vnk-notification.component';
 import {CommonModule} from '@angular/common';
 import {VnkNotificationService} from './service/vnk-notification.service';
+import {VnkProgressBarComponent} from "./progress/vnk-progress-bar.component";
 
 @NgModule({
   imports: [
@@ -13,6 +14,7 @@ import {VnkNotificationService} from './service/vnk-notification.service';
   declarations: [
     VinkelDummyComponent,
     VnkNotificationComponent,
+    VnkProgressBarComponent
   ],
   providers: [
     LibService,
@@ -20,7 +22,8 @@ import {VnkNotificationService} from './service/vnk-notification.service';
   ],
   exports: [
     VinkelDummyComponent,
-    VnkNotificationComponent
+    VnkNotificationComponent,
+    VnkProgressBarComponent
   ]
 })
 export class VinkelModule {
