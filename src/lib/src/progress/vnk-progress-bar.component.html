@@ -1,8 +1,8 @@
 <div class="progress" [style.height]="height+'px'">
   <div class="progress-bar"
        [ngClass]="progressClass"
-       [class.determinate]="_determinated"
-       [class.indeterminate]="!_determinated"
+       [class.determinate]="determinated"
+       [class.indeterminate]="!determinated"
        [style.width]="value+'%'"
        [style.height]="height+'px'"
   ></div>
