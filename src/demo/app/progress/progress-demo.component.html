@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-12">
+    <input class="form-control" type="number" max="100" min="0" [(ngModel)]="value">
+    <button class="btn btn-info" (click)="onResetProgress()">Reset</button>
+    <button class="btn btn-success" (click)="onToggleIndeterminated()">Toggle</button>
+    <hr>
+    <vnk-progress-bar class="mt-2" [value]="value" #progress1 ></vnk-progress-bar>
+    <code>
+      &lt;vnk-progress-bar [value]="value" &gt;&lt;/vnk-progress-bar&gt;
+    </code>
+    <vnk-progress-bar class="mt-2" [value]="value" height="25" progress-class="bg-success" #progress2 ></vnk-progress-bar>
+    <code>
+      &lt;vnk-progress-bar [value]="value" height="25" progress-class="bg-success" &gt;&lt;/vnk-progress-bar&gt;
+    </code>
+    <vnk-progress-bar class="mt-2" [value]="value" height="4" progress-class="bg-warning" #progress3 ></vnk-progress-bar>
+    <code>
+      &lt;vnk-progress-bar [value]="value" height="4" progress-class="bg-warning" &gt;&lt;/vnk-progress-bar&gt;
+    </code>
+  </div>
+
+</div>
