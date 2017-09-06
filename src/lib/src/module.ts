@@ -6,6 +6,7 @@ import {VnkNotificationComponent} from './notification/vnk-notification.componen
 import {CommonModule} from '@angular/common';
 import {VnkNotificationService} from './service/vnk-notification.service';
 import {VnkProgressBarComponent} from "./progress/vnk-progress-bar.component";
+import {VnkDropZoneDirective} from "./directives/drop-zone/vnk-drop-zone.directive";
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import {VnkProgressBarComponent} from "./progress/vnk-progress-bar.component";
   declarations: [
     VinkelDummyComponent,
     VnkNotificationComponent,
-    VnkProgressBarComponent
+    VnkProgressBarComponent,
+    VnkDropZoneDirective
   ],
   providers: [
     LibService,
@@ -23,7 +25,8 @@ import {VnkProgressBarComponent} from "./progress/vnk-progress-bar.component";
   exports: [
     VinkelDummyComponent,
     VnkNotificationComponent,
-    VnkProgressBarComponent
+    VnkProgressBarComponent,
+    VnkDropZoneDirective
   ]
 })
 export class VinkelModule {

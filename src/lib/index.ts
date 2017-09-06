@@ -6,6 +6,9 @@ export {VinkelModule} from './src/module';
 export {VnkNotificationComponent} from './src/notification/vnk-notification.component';
 export {VnkProgressBarComponent} from './src/progress/vnk-progress-bar.component';
 
+// Directives
+export {VnkDropZoneDirective} from './src/directives/drop-zone/vnk-drop-zone.directive';
+
 
 // Services
 export {
