@@ -8,6 +8,7 @@ import {RouterModule} from '@angular/router';
 import {AppRoutingModule} from './app-routing.module';
 import {HomeComponent} from './home/home.component';
 import {ProgressDemoComponent} from "./progress/progress-demo.component";
+import {DropZoneDemoComponent} from "./drop-zone/drop-zone-demo.component";
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import {ProgressDemoComponent} from "./progress/progress-demo.component";
     AppComponent,
     HomeComponent,
     NotificationDemoComponent,
-    ProgressDemoComponent
+    ProgressDemoComponent,
+    DropZoneDemoComponent
   ],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-12">
+    <div class=" col-6 droppable-zone" [class.drag-in]="dragInProgress" vnkDropZone (files)="onDrop($event)" (over)="dragInProgress = true" (leave)="dragInProgress = false">Drop files in here!</div>
+    <h5 class="mt-2">Dropped files</h5>
+    <ul class="list-group mt-1">
+      <li class="list-group-item" *ngFor="let f of droppedFiles">{{f}}</li>
+    </ul>
+  </div>
+
+</div>

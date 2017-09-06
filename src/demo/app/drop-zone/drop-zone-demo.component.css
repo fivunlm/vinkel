@@ -1,0 +1,11 @@
+.droppable-zone {
+  height: 100px;
+  border: 1px dashed blue;
+  text-align: center;
+  color: blue;
+}
+
+.drag-in {
+  border: 5px dashed green;
+  color: green;
+}

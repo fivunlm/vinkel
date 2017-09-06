@@ -56,7 +56,7 @@ describe('VnkDropZoneDirective', function () {
 
   it('should emit files event when dropping files over zone', () => {
     let files = null;
-    dropZoneDirective.files.subscribe((fs) => files = fs);
+    dropZoneDirective.files.subscribe((fs: any) => files = fs);
     let event = {
       preventDefault: () => {},
       dataTransfer: {
